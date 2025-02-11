@@ -289,6 +289,16 @@ lapi:
   # -- topologySpreadConstraints for lapi
   topologySpreadConstraints: []
 
+  # -- Create a service account for lapi
+  serviceAccount:
+    # -- Specifies whether a service account should be created
+    create: false
+    # -- The name of the service account to use.
+    name: ""
+    # -- Annotations to add to the service account
+    annotations: {}
+
+
   # -- Enable service monitoring (exposes "metrics" port "6060" for Prometheus)
   metrics:
     enabled: true
